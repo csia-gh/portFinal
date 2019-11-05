@@ -1,0 +1,148 @@
+// Contact Page
+#contact {
+  &-a {
+    max-width: 1800px;
+    box-sizing: border-box;
+    margin: auto;
+    background: #fff;
+    padding: 1rem 2rem;
+
+    .text-fields {
+      display: grid;
+      grid-template-areas:
+        "name email"
+        "subject phone"
+        "message message";
+      grid-gap: 1.2rem;
+      margin-bottom: 1.2rem;
+
+      // Grid Areas
+      .name-input {
+        grid-area: name;
+      }
+      .subject-input {
+        grid-area: subject;
+      }
+      .email-input {
+        grid-area: email;
+      }
+      .phone-input {
+        grid-area: phone;
+      }
+      .message-input {
+        grid-area: message;
+        height: 100px;
+      }
+
+      .text-input {
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    button[type="submit"] {
+      width: 50%;
+      margin-bottom: 50px;
+      @media (max-width: 550px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-b {
+    background: #f4f4f4;
+    padding: 2rem;
+    box-sizing: border-box;
+    max-width: 1800px;
+    margin: auto;
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+      @media (max-width: 550px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+
+  &-c {
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+    }
+  }
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #ee801a;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.contact-section-title {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+p.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn {
+  &-contact {
+    color: #fff;
+    background-color: #000;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message";
+      }
+    }
+
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #ee801a dotted;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

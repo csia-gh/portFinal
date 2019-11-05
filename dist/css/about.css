@@ -1,0 +1,146 @@
+section#about {
+  height: 100%;
+  max-width: 1800px;
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  background: #333;
+  display: flex; }
+  @media (max-width: 325px) {
+    section#about {
+      margin: 0;
+      padding: 0; } }
+  section#about #about-content {
+    width: 50%;
+    height: 100%;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center; }
+    section#about #about-content .content-width {
+      max-width: 700px;
+      width: 100%;
+      margin: auto; }
+      section#about #about-content .content-width h2 {
+        margin-bottom: 1rem; }
+        section#about #about-content .content-width h2 span {
+          font-size: 1.6rem;
+          letter-spacing: 10px;
+          margin-left: 3px; }
+      section#about #about-content .content-width p {
+        font-size: 1.2rem;
+        margin-bottom: 1rem; }
+      section#about #about-content .content-width h4 {
+        margin-bottom: 0.8rem;
+        color: #ee801a;
+        font-size: 1.3rem; }
+      section#about #about-content .content-width .uls {
+        display: flex;
+        width: 200px;
+        justify-content: space-evenly;
+        font-size: 1.2rem;
+        margin-left: 0.5rem; }
+        section#about #about-content .content-width .uls ul {
+          margin-right: 1.5rem; }
+  section#about #about-img {
+    width: 50%;
+    align-self: stretch;
+    background: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    section#about #about-img img {
+      border: 5px solid #fff;
+      border-radius: 10px;
+      width: 300px;
+      margin: auto; }
+    @media (max-width: 1024px) {
+      section#about #about-img img {
+        border: 5px solid #fff;
+        border-radius: 10px;
+        width: 250px;
+        margin: auto; } }
+
+@media (max-width: 860px) {
+  section#about #about-img {
+    display: none; }
+  section#about #about-content {
+    position: relative;
+    width: 100%; }
+    section#about #about-content .uls {
+      margin-left: 0.5rem; } }
+
+@media (max-width: 550px) {
+  section#about #about-content {
+    padding: 2rem 1rem;
+    text-align: center; }
+    section#about #about-content .content-width h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      background: #444; }
+    section#about #about-content .content-width h4 {
+      font-size: 1.6rem; }
+    section#about #about-content .content-width p {
+      font-size: 1.3rem;
+      margin-left: 0rem;
+      padding: 0 0.5rem;
+      text-align: justify; }
+      section#about #about-content .content-width p:last-of-type {
+        padding-bottom: 2rem;
+        border-bottom: #777 dotted 1px; }
+    section#about #about-content .content-width .uls {
+      width: 100%;
+      margin: 0 auto 1.5rem auto;
+      justify-content: space-evenly; }
+      section#about #about-content .content-width .uls ul {
+        font-size: 1.3rem;
+        padding: 0 1.5rem; }
+  section#about #experience {
+    padding-bottom: 1.5rem;
+    border-bottom: #777 dotted 1px; } }
+
+#prog-bars {
+  width: 50%;
+  height: 200px; }
+  #prog-bars h4.prog-title {
+    color: #ee801a; }
+  #prog-bars .bars {
+    margin-left: 1rem; }
+  #prog-bars .progress {
+    overflow: hidden;
+    height: 8px;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 0.3rem; }
+    #prog-bars .progress div {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background-color: #777; }
+  @media (max-width: 550px) {
+    #prog-bars {
+      margin: auto;
+      width: 100%;
+      margin-top: 2rem; }
+      #prog-bars .bars {
+        margin: auto;
+        padding: 0 1rem; } }
+
+.technical-skills {
+  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between; }
+  .technical-skills h5 {
+    margin-bottom: 0.2rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+    color: lightgreen; }
+  @media (max-width: 550px) {
+    .technical-skills {
+      display: block; }
+      .technical-skills h4 {
+        font-size: 1.6rem; } }
