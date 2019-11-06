@@ -33,11 +33,12 @@
       padding: 2rem 0.5rem; } }
 
 #contact-b {
-  background: #f4f4f4;
+  background: #ee801a;
   padding: 2rem;
   box-sizing: border-box;
   max-width: 1800px;
-  margin: auto; }
+  margin: auto;
+  color: #fff; }
   #contact-b .contact-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -92,7 +93,7 @@ p.lead {
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px #ee801a dotted; }
+    border-bottom: 1px #333; }
     #contact-b div:last-child {
       border: none;
       margin-bottom: 0;

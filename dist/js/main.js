@@ -1,26 +1,22 @@
 (function() {
-  var card = document.querySelector(".thecard");
-  // setInterval(function() {
-  //   card.classList.remove("thecardBack");
-
-  //   setTimeout(function() {
-  //     card.classList.add("thecardBack");
-  //   }, 2000);
-  // }, 4000);
-
-  card.classList.remove("thecardBack");
-
-  setTimeout(function() {
-    card.classList.add("thecardBack");
-  }, 2000);
-
+  var header = document.getElementById("greeting");
+  var greetings = ["Welcome to my website", "Feelm at home", "Whatever"];
+  var index = 0;
   setInterval(function() {
-    card.classList.remove("thecardBack");
+    header.textContent = greetings[index];
+    if (index === 0 && greetings.length !== 3) {
+      header.classList.toggle("flip");
+    }
+    if (index === 2 && greetings.length === 3) {
+      index = -1;
+      greetings.unshift("Hello");
+    }
+    if (index === 3) {
+      index = -1;
+    }
 
-    setTimeout(function() {
-      card.classList.add("thecardBack");
-    }, 2000);
-  }, 10000);
+    index++;
+  }, 3000);
 
   // / Select DOM Items
   const menuBtn = document.querySelector(".menu-btn");
