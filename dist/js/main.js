@@ -22,6 +22,7 @@
     header.classList.toggle("flip");
     setTimeout(() => {
       header.textContent = "Welcome to my website";
+      document.querySelector(".l-btn").style.opacity = 1;
     }, 900);
   }, 2000);
 

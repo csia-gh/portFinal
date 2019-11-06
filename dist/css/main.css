@@ -266,7 +266,8 @@ section#home {
       border: 3px solid #ee801a;
       font-size: 1.8rem;
       border-radius: 20px 0px 20px 0px;
-      transition: all 0.8s; }
+      transition: all 2s;
+      opacity: 0; }
       @media (max-width: 550px) {
         section#home #landing-area a.l-btn {
           padding: 0.5rem 0.8rem;
