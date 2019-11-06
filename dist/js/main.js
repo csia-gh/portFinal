@@ -76,6 +76,33 @@
     }
   }
 
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener("click", function() {
+      navItems.forEach(item => item.classList.remove("current"));
+      this.classList.add("current");
+    });
+  }
+
+  for (var i = 0; i < navItems.length; i++) {
+    navItems[i].addEventListener("click", toggleMenu);
+  }
+
+  $(window)
+    .scroll(function() {
+      var scrollDistance = $(window).scrollTop();
+
+      // Assign active class to nav links while scolling
+      $(".page-section").each(function(i) {
+        if ($(this).position().top - 10 <= scrollDistance) {
+          $(".menu .menu-nav .nav-item.current").removeClass("current");
+          $(".menu .menu-nav .nav-item")
+            .eq(i)
+            .addClass("current");
+        }
+      });
+    })
+    .scroll();
+
   // typewriter
   class TypeWriter {
     constructor(txtElement, words, wait = 2000) {
@@ -152,8 +179,26 @@
     }
   });
 
+  // // Smooth Scrolling
+  // $("#nav-2 a").on("click", function(event) {
+  //   if (this.hash !== "") {
+  //     event.preventDefault();
+
+  //     const hash = this.hash;
+
+  //     $("html, body").animate(
+  //       {
+  //         scrollTop: $(hash).offset().top - 100
+  //       },
+  //       800
+  //     );
+  //   }
+  // });
+
   // Smooth Scrolling
-  $("#navbar a, .btn, .menu a").on("click", function(event) {
+  $(
+    "a[href='#l-home'],a[href='#about'],a[href='#projects'],a[href='#contact-a']"
+  ).on("click", function(event) {
     if (this.hash !== "") {
       event.preventDefault();
 

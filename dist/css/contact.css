@@ -28,6 +28,9 @@
     @media (max-width: 550px) {
       #contact-a button[type="submit"] {
         width: 100%; } }
+  @media (max-width: 550px) {
+    #contact-a {
+      padding: 2rem 0.5rem; } }
 
 #contact-b {
   background: #f4f4f4;
