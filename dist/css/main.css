@@ -129,13 +129,15 @@ ul {
   position: relative;
   width: 100%;
   height: 100%;
-  margin-bottom: 50px; }
-  @media (max-width: 550px) {
+  margin-top: 40vh;
+  margin-bottom: 90px;
+  line-height: 1.2; }
+  @media (max-width: 599px) {
     .cardContainer {
-      margin-bottom: 50px; } }
-  @media (max-height: 320px) {
+      margin-bottom: 150px; } }
+  @media (max-width: 415px) {
     .cardContainer {
-      margin-bottom: 50px; } }
+      margin-bottom: 120px; } }
 
 .thecard {
   position: absolute;
@@ -280,24 +282,16 @@ section#home {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6); }
   section#home #landing-area {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem; }
-    section#home #landing-area .wrapper {
-      transform: translateY(-50%);
-      text-align: center;
-      width: 100%; }
-      section#home #landing-area .wrapper h1 {
-        font-size: 5rem;
-        padding-bottom: 1.5rem; }
+    justify-content: center; }
+    section#home #landing-area h1 {
+      font-size: 4rem; }
     section#home #landing-area a.btn {
-      padding: 1rem 1.5rem;
+      padding: 0.8rem 1.2rem;
       border: 3px solid #ee801a;
-      font-size: 2rem;
+      font-size: 1.8rem;
       border-radius: 20px 0px 20px 0px;
       transition: all 0.8s; }
       section#home #landing-area a.btn:hover {
@@ -352,32 +346,23 @@ section#home {
       height: 150px; } }
 
 @media (max-width: 415px) {
-  section#home #landing-area .wrapper h1 {
-    font-size: 3rem; }
-  section#home #landing-area a.btn {
-    padding: 0.3rem 0.8rem;
-    border: 2px solid #fff;
-    font-size: 1.4rem;
-    color: #fff;
-    background: #ee801a; }
-    section#home #landing-area a.btn:hover {
-      color: #ee801a;
-      background: none;
-      border-color: #ee801a; } }
+  section#home #landing-area h1 {
+    font-size: 3rem; } }
 
 @media (max-width: 375px) {
   #header {
     display: none; } }
 
 @media (max-height: 320px) {
-  section#home #landing-area .wrapper h1 {
+  section#home #landing-area h1 {
     font-size: 3rem; }
   section#home #landing-area a.btn {
     padding: 0.3rem 0.8rem;
     border: 2px solid #fff;
     font-size: 1.4rem;
     color: #fff;
-    background: #ee801a; }
+    background: #ee801a;
+    margin-top: 40vh; }
     section#home #landing-area a.btn:hover {
       color: #ee801a;
       background: none;

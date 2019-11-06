@@ -120,33 +120,24 @@ section#home {
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   #landing-area {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 2rem;
-    .wrapper {
-      transform: translateY(-50%);
-      text-align: center;
-      width: 100%;
-      h1 {
-        font-size: 5rem;
-        padding-bottom: 1.5rem;
+    h1 {
+      font-size: 4rem;
 
-        // line-height: 1;
-        // margin-bottom: 1.5rem;
-      }
+      // line-height: 1;
+      // margin-bottom: 1.5rem;
     }
 
     a.btn {
-      padding: 1rem 1.5rem;
+      padding: 0.8rem 1.2rem;
       border: 3px solid #ee801a;
-      font-size: 2rem;
+      font-size: 1.8rem;
       border-radius: 20px 0px 20px 0px;
       transition: all 0.8s;
-
+      // margin-top: 15vh;
       &:hover {
         background: #ee801a;
         border-color: #fff;
@@ -232,25 +223,23 @@ section#home {
 @media (max-width: 415px) {
   section#home {
     #landing-area {
-      .wrapper {
-        h1 {
-          font-size: 3rem;
-        }
-      }
-
-      a.btn {
-        padding: 0.3rem 0.8rem;
-        border: 2px solid #fff;
-        font-size: 1.4rem;
-        color: #fff;
-        background: #ee801a;
-        &:hover {
-          color: #ee801a;
-          background: none;
-          border-color: #ee801a;
-        }
+      h1 {
+        font-size: 3rem;
       }
     }
+
+    // a.btn {
+    //   padding: 0.3rem 0.8rem;
+    //   border: 2px solid #fff;
+    //   font-size: 1.4rem;
+    //   color: #fff;
+    //   background: #ee801a;
+    //   &:hover {
+    //     color: #ee801a;
+    //     background: none;
+    //     border-color: #ee801a;
+    //   }
+    // }
   }
 }
 
@@ -267,10 +256,8 @@ section#home {
 @media (max-height: 320px) {
   section#home {
     #landing-area {
-      .wrapper {
-        h1 {
-          font-size: 3rem;
-        }
+      h1 {
+        font-size: 3rem;
       }
 
       a.btn {
@@ -279,6 +266,7 @@ section#home {
         font-size: 1.4rem;
         color: #fff;
         background: #ee801a;
+        margin-top: 40vh;
         &:hover {
           color: #ee801a;
           background: none;
