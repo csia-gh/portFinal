@@ -83,6 +83,10 @@ p.lead {
     background-color: #333; }
 
 @media (max-width: 550px) {
+  div.transform {
+    transition: all 0.5s ease-in-out; }
+    div.transform:hover {
+      transform: scale(1.05); }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; }
   #contact-b div {

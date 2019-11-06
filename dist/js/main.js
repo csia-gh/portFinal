@@ -1,44 +1,26 @@
 (function() {
-  var wordArray = ["hello my friend", "Heya fellow", "Viewers"];
-  var element = document.getElementsByTagName("h1")[0];
-  var element2 = document.getElementsByTagName("h1")[1];
-  var wordIndex = 1;
-
-  var resetAnimation = function() {
-    element.classList.remove("flip");
-  };
-
-  setInterval(function() {
-    switch (wordIndex) {
-      case 0:
-        element.classList.add("flip");
-        element.textContent = wordArray[0];
-        wordIndex = 1;
-        setTimeout(resetAnimation, 1000);
-        break;
-      case 1:
-        element2.classList.add("flip");
-        element2.textContent = wordArray[1];
-        wordIndex = 2;
-        setTimeout(resetAnimation, 1000);
-        break;
-      case 2:
-        element2.classList.add("flip");
-        element2.textContent = wordArray[2];
-        wordIndex = 0;
-        setTimeout(resetAnimation, 1000);
-        break;
-    }
-  }, 3000);
-
   var card = document.querySelector(".thecard");
+  // setInterval(function() {
+  //   card.classList.remove("thecardBack");
+
+  //   setTimeout(function() {
+  //     card.classList.add("thecardBack");
+  //   }, 2000);
+  // }, 4000);
+
+  card.classList.remove("thecardBack");
+
+  setTimeout(function() {
+    card.classList.add("thecardBack");
+  }, 2000);
+
   setInterval(function() {
     card.classList.remove("thecardBack");
 
     setTimeout(function() {
       card.classList.add("thecardBack");
-    }, 1500);
-  }, 3000);
+    }, 2000);
+  }, 10000);
 
   // / Select DOM Items
   const menuBtn = document.querySelector(".menu-btn");
@@ -93,9 +75,13 @@
 
       // Assign active class to nav links while scolling
       $(".page-section").each(function(i) {
-        if ($(this).position().top - 10 <= scrollDistance) {
+        if ($(this).position().top - 200 <= scrollDistance) {
           $(".menu .menu-nav .nav-item.current").removeClass("current");
           $(".menu .menu-nav .nav-item")
+            .eq(i)
+            .addClass("current");
+          $(".navItem2.current").removeClass("current");
+          $(".navItem2")
             .eq(i)
             .addClass("current");
         }
@@ -206,7 +192,7 @@
 
       $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top - 100
+          scrollTop: $(hash).offset().top
         },
         800
       );
