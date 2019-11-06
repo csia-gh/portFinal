@@ -17,6 +17,9 @@
 
   //   index++;
   // }, 3000);
+  setTimeout(() => {
+    header.style.opacity = 1;
+  }, 500);
 
   setTimeout(function() {
     header.classList.toggle("flip");
