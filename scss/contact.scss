@@ -53,7 +53,7 @@
   }
 
   &-b {
-    background: #ee801a;
+    background: darken(#ee801a, 10);
     padding: 2rem;
     box-sizing: border-box;
     max-width: 1800px;
@@ -137,10 +137,11 @@ p.lead {
     }
 
     &-b {
+      padding: 2rem 0;
       div {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
-        border-bottom: 1px #333 dotted;
+        border-bottom: 1px #000 dotted;
 
         &:last-child {
           border: none;

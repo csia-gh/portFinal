@@ -666,7 +666,7 @@ h2.section-title {
       padding: 2rem 0.5rem; } }
 
 #contact-b {
-  background: #ee801a;
+  background: #c6670f;
   padding: 2rem;
   box-sizing: border-box;
   max-width: 1800px;
@@ -723,14 +723,16 @@ p.lead {
       transform: scale(1.05); }
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #333 dotted; }
-    #contact-b div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0; }
+  #contact-b {
+    padding: 2rem 0; }
+    #contact-b div {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px #000 dotted; }
+      #contact-b div:last-child {
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 0; }
   #contact-c h1 {
     font-size: 2rem; } }
 

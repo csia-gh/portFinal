@@ -19,13 +19,15 @@
   // }, 3000);
   setTimeout(() => {
     header.style.opacity = 1;
-  }, 500);
+  }, 800);
 
   setTimeout(function() {
     header.classList.toggle("flip");
     setTimeout(() => {
       header.textContent = "Welcome to my website";
-      document.querySelector(".l-btn").style.opacity = 1;
+      setTimeout(() => {
+        document.querySelector(".l-btn").style.opacity = 1;
+      }, 500);
     }, 900);
   }, 2000);
 
