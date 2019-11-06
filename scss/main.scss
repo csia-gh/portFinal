@@ -19,8 +19,8 @@ ul {
 }
 
 .flip {
-  transform: rotateY(360deg);
-  transition: transform 0.5s ease-in-out;
+  transform: rotateX(360deg);
+  transition: transform 4s ease-in-out;
 }
 
 .container {
@@ -129,7 +129,7 @@ section#home {
       font-size: 4rem;
       line-height: 1.2;
       margin-bottom: 1.5rem;
-      transition: all 1s;
+      transition: all 2s;
       @media (max-width: 550px) {
         font-size: 3rem;
       }
