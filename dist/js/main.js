@@ -201,7 +201,7 @@
 
       $("html, body").animate(
         {
-          scrollTop: $(hash).offset().top
+          scrollTop: $(hash).offset().top - 100
         },
         800
       );
