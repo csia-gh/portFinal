@@ -724,7 +724,7 @@ p.lead {
   #contact-b div {
     margin-bottom: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px #333; }
+    border-bottom: 1px #333 dotted; }
     #contact-b div:last-child {
       border: none;
       margin-bottom: 0;
